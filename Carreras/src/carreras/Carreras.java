@@ -27,7 +27,7 @@ public class Carreras extends Thread{
             c2=0;
             c3=0;
             try {
-                sleep((int)(Math.random()*30));
+                sleep((int)(Math.random()*38));
                 /*Se agrega los coches que van a correr en gui*/
                 c1=p.gettsuru().getLocation().x;
                 c2=p.getatoz().getLocation().x;
@@ -46,11 +46,11 @@ public class Carreras extends Thread{
             }
         }
         if(c1>c2 && c1>c3){
-                    p.anunciarGanador("Gano el tsuru tuneado");
+                    p.anunciarGanador("Ganó el tsuru tuneado");
                     }else if(c2>c1 && c2>c3){
-                        p.anunciarGanador("Gano el atoz");
+                        p.anunciarGanador("Ganó el atoz");
                         }else if(c3>c1 && c3>c2){
-                            p.anunciarGanador("Gano el tinaco");
+                            p.anunciarGanador("Ganó el tinaco");
                             }else{
                                 p.anunciarGanador("Empate");
                                 } 

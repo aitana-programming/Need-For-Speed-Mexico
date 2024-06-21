@@ -148,12 +148,14 @@ public class carrera extends javax.swing.JFrame {
         hilo1.start();
         hilo2.start();
         hilo3.start();
+      
+        
     }//GEN-LAST:event_prendeleMouseClicked
-    public synchronized void anunciarGanador(JLabel ganador) {
+    public synchronized void anunciarGanador(String ganador) {
         
         if (!ganadorAnunciado) {
             //System.out.println("El ganador es el carrito: " + ganador.getText());
-            JOptionPane.showMessageDialog(this,"El ganador es el carrito: " + ganador.getName());
+            JOptionPane.showMessageDialog(this,"El ganador es el carrito: " + ganador);
             ganadorAnunciado = true;
         }
     }
